@@ -1,12 +1,17 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": ".",
-    "types": ["vitest/globals" /* https://vitest.dev/config/#globals */],
-    "plugins": [{ "name": "@astrojs/ts-plugin" }],
+    "baseUrl": "/home/rsc/Dev/flowloop24",
+    "types": ["vitest/globals"],
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
     "paths": {
       "~/*": ["src/*"]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   }
 }
-
