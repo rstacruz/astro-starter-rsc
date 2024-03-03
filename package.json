@@ -15,8 +15,8 @@
     "prettier:check": "prettier --cache --check .",
     "astro:check": "astro check",
     "typescript:check": "tsc --noEmit",
-    "check": "concurrently \"npm:*:check\"",
-    "format": "concurrently \"npm:*:format\""
+    "check": "concurrently --group \"npm:*:check\"",
+    "format": "concurrently --group \"npm:*:format\""
   },
   "dependencies": {
     "@astrojs/check": "^0.5.4",
