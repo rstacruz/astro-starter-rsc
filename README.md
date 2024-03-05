@@ -10,16 +10,17 @@ This starter is a collection of my favorite integrations.
 - Vitest
 - Eslint
 - Prettier
-- ~~pnpm~~ (coming soon)
+- pnpm
+- GitHub Actions
 - ~~Playwright~~ (coming soon)
-- ~~GitHub Actions~~ (coming soon)
 - ~~Storybook~~ (coming soon)
 
 ## Getting started
 
-```
-npm install
-npm run dev
+```sh
+# to enable pnpm: corepack enable pnpm
+pnpm install
+pnpm dev
 open http://localhost:4321/
 ```
 
