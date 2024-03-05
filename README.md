@@ -19,7 +19,7 @@ This starter is a collection of my favorite integrations.
 
 There are a few ways I can think this repo can be useful:
 
-* Use this as is. I chose the defaults to be as reasonable as possible to modern React projects.
+* Use this as is. I chose the defaults to be as reasonable as possible to modern React projects. Try it with `npx tiged github:rstacruz/astro-starter-rsc <project-name>`.
 
 * Remove integrations you don't need. Don't need Tailwind? Search the codebase (`git grep tailwind` and `git ls-files | grep tailwind`) and remove those references.
 
