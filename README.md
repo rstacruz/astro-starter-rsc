@@ -3,8 +3,7 @@
 I often use Astro to prototype new ideas, but I find myself adding the same integrations over and over.
 This starter is a collection of my favorite integrations.
 
-- Astro
-- React
+- [Astro](https://astro.build)
 - TypeScript
 - Tailwind
 - Vitest
