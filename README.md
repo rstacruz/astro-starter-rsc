@@ -11,8 +11,19 @@ This starter is a collection of my favorite integrations.
 - Prettier
 - pnpm
 - GitHub Actions
+- Testing Library
 - ~~Playwright~~ (coming soon)
 - ~~Storybook~~ (coming soon)
+
+## Ideas on how to use this
+
+There are a few ways I can think this repo can be useful:
+
+* Use this as is. I chose the defaults to be as reasonable as possible to modern React projects.
+
+* Remove integrations you don't need. Don't need Tailwind? Search the codebase (`git grep tailwind` and `git ls-files | grep tailwind`) and remove those references.
+
+* Use it as a reference. Need to integrate Testing Library into your own Astro project? Search this codebase like above and see how I did it.
 
 ## Getting started
 
