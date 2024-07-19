@@ -19,8 +19,8 @@
     "format": "concurrently -c green,blue,yellow,red --group \"npm:*:format\""
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@astrojs/react": "^3.1.0",
+    "@astrojs/check": "^0.8.2",
+    "@astrojs/react": "^3.6.0",
     "@astrojs/tailwind": "^5.1.0",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
@@ -28,7 +28,7 @@
     "@types/react-dom": "^18.2.23",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
-    "astro": "^4.5.12",
+    "astro": "^4.12.1",
     "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",

@@ -1,3 +1,3 @@
 export function Example() {
-  return <div>Hello!</div>
+  return <div className="p-4">Hello!</div>
 }
