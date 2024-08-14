@@ -12,8 +12,6 @@ This starter is a collection of my favorite integrations.
 - pnpm
 - GitHub Actions
 - Testing Library
-- ~~Playwright~~ (coming soon)
-- ~~Storybook~~ (coming soon)
 
 ## Ideas on how to use this
 
