@@ -9,5 +9,5 @@ export default [
   ...tseslint.configs.recommended,
   ...eslintPluginAstro.configs.recommended,
   eslintConfigPrettier,
-  { ignores: ['**/dist'] }
+  { ignores: ['**/dist', '**/public'] }
 ]
