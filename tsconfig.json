@@ -4,9 +4,8 @@
     "baseUrl": ".",
     "types": ["vitest/globals"],
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
-    "paths": { "@/*": ["src/*"] },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "paths": { "@/*": ["src/*"] }
   },
-  "exclude": ["dist", "public"]
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
 }
