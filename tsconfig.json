@@ -8,6 +8,6 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   },
-  "include": [".astro/types.d.ts", "**/*"],
+  "include": [".astro/types.d.ts", ".astro/actions.d.ts", "**/*"],
   "exclude": ["dist", "coverage"]
 }
