@@ -1,12 +1,12 @@
-import { defineConfig } from 'vitest/config'
+import { getViteConfig } from 'astro/config'
 
-export default defineConfig({
+// https://docs.astro.build/en/guides/testing/#vitest
+export default getViteConfig({
   test: {
     environment: 'jsdom',
     globals: true,
+    reporter: 'dot',
     setupFiles: ['./vitest.setup.ts'],
-    coverage: {
-      enabled: true
-    }
+    coverage: { enabled: true }
   }
 })
