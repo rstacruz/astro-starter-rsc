@@ -9,14 +9,14 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
-    "eslint:format": "eslint --fix .",
-    "eslint:check": "eslint .",
-    "prettier:format": "prettier --cache --write .",
-    "prettier:check": "prettier --cache --check .",
     "astro:check": "astro check",
+    "eslint:check": "eslint . --cache --cache-location .cache/eslint",
+    "eslint:format": "eslint . --cache --cache-location .cache/eslint --fix",
+    "prettier:check": "prettier --cache --cache-location .cache/prettier --check .",
+    "prettier:format": "prettier --cache --cache-location .cache/prettier --write . --log-level silent",
     "typescript:check": "tsc --noEmit",
-    "check": "concurrently -m 1 -c green,blue,yellow,red --group \"npm:*:check\"",
-    "format": "concurrently -m 1 -c green,blue,yellow,red --group \"npm:*:format\""
+    "check": "concurrently -m 1 --pad-prefix -c green,blue,yellow,red --names eslint,prettier,astro,typescript --group \"pnpm --silent eslint:check\" \"pnpm --silent prettier:check\" \"pnpm --silent astro:check\" \"pnpm --silent typescript:check\"",
+    "format": "concurrently -m 1 --pad-prefix -c green,blue,yellow,red --names eslint,prettier --group \"pnpm --silent eslint:format\" \"pnpm --silent prettier:format\""
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

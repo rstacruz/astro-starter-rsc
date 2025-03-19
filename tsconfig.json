@@ -6,7 +6,8 @@
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
     "paths": { "@/*": ["src/*"] },
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "react",
+    "incremental": true
   },
   "include": [".astro/types.d.ts", ".astro/actions.d.ts", "**/*"],
   "exclude": ["dist", "coverage"]
