@@ -15,7 +15,7 @@
     "prettier:check": "prettier --cache --cache-location .cache/prettier --check .",
     "prettier:format": "prettier --cache --cache-location .cache/prettier --write . --log-level silent",
     "typescript:check": "tsc --noEmit",
-    "check": "concurrently -m 1 --pad-prefix -c green,blue,yellow,red --names eslint,prettier,astro,typescript --group \"pnpm --silent eslint:check\" \"pnpm --silent prettier:check\" \"pnpm --silent astro:check\" \"pnpm --silent typescript:check\"",
+    "check": "concurrently --pad-prefix -c green,blue,yellow,red --names eslint,prettier,astro,typescript --group \"pnpm --silent eslint:check\" \"pnpm --silent prettier:check\" \"pnpm --silent astro:check\" \"pnpm --silent typescript:check\"",
     "format": "concurrently -m 1 --pad-prefix -c green,blue,yellow,red --names eslint,prettier --group \"pnpm --silent eslint:format\" \"pnpm --silent prettier:format\""
   },
   "dependencies": {
