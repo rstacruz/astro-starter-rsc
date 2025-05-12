@@ -7,6 +7,20 @@ export default getViteConfig({
     globals: true,
     reporter: 'dot',
     setupFiles: ['./vitest.setup.ts'],
-    coverage: { enabled: true }
+    coverage: {
+      enabled: true,
+      exclude: [
+        'dist',
+        '.storybook',
+        '.astro',
+        'astro.config.mjs',
+        'eslint.config.mjs',
+        'vite.config.js',
+        'worker-configuration.d.ts',
+        'src/actions/index.ts',
+        'src/**/*.astro', // can't test Astro
+        '**/*.stories.tsx' // Exclude all story files
+      ]
+    }
   }
 })
