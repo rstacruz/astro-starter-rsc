@@ -13,9 +13,7 @@ export default getViteConfig({
         'dist',
         '.storybook',
         '.astro',
-        'astro.config.mjs',
-        'eslint.config.mjs',
-        'vite.config.js',
+        '*.config.*{ts,js}*',
         'worker-configuration.d.ts',
         'src/actions/index.ts',
         'src/**/*.astro', // can't test Astro
